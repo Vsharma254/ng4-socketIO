@@ -1,0 +1,1 @@
+export const baseURl:string = "http://localhost:3000/api/";

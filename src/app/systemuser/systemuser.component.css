@@ -1,0 +1,39 @@
+.full100 {
+    width: 100%;
+    padding: 10px;
+    float: left;
+}
+
+.div40 {
+    width: 40%;
+    padding: 10px;
+    float: left;
+    border: solid black;
+}
+
+.htr {
+    width: 25%;
+    float: left;
+    padding: 5px;
+}
+
+.trborder {
+    border: solid dodgerblue;
+    float: left;
+    width: 100%;
+}
+
+.htr1 {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    border-right: solid hotpink;
+}
+
+.pad5 {
+    padding: 5px 5px 0px 5px;
+}
+
+.full101 {
+    width: 100%;
+}

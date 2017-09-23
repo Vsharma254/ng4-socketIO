@@ -1,0 +1,55 @@
+<!--<md-card class="demo-card demo-basic">
+    <md-toolbar color="accent">Add New State</md-toolbar>
+    <md-card-content class="mdl-shadow--6dp pad5">
+        <table style="width: 100%" cellspacing="0">
+            <tr>
+                <td>
+                    <md-input-container>
+                        <input mdInput placeholder="State name" [(ngModel)]="state.Name">
+                    </md-input-container>
+                </td>
+                <td>
+                    <md-input-container>
+                        <input mdInput placeholder="State description" [(ngModel)]="state.Description">
+                    </md-input-container>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <md-select id="countryString" name="countryString" placeholder="Country" [(ngModel)]="_selectedCountry">
+                        <md-option *ngFor="let country of _countryList" [value]="country">{{country.Name}}</md-option>
+                    </md-select>
+                </td>
+            </tr>
+        </table>
+        <div class="mdl-card__actions mdl-card--border">
+            <button id="addnewcountryButton" (click)="addNewState()" md-raised-button color="accent">  Add New State </button>
+        </div>
+    </md-card-content>
+</md-card>
+
+<md-card class="demo-card demo-basic">
+    <md-toolbar color="accent">State List</md-toolbar>
+    <md-card-content>
+        <table class="mdl-data-table mdl-js-data-table full101">
+            <thead>
+                <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Name</th>
+                    <th class="mdl-data-table__cell--non-numeric">Country Name</th>
+                    <th class="mdl-data-table__cell--non-numeric">Description</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of _stateList">
+                    <td class="mdl-data-table__cell--non-numeric">{{item.Name}}</td>
+                    <td class="mdl-data-table__cell--non-numeric">{{item.CountryName}}</td>
+                    <td class="mdl-data-table__cell--non-numeric">{{item.Description}}</td>
+                    <td class="pad5">
+                        <button md-raised-button color="accent">Delete State </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </md-card-content>
+</md-card>-->

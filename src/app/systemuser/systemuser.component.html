@@ -1,0 +1,65 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="widget-box">
+            <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                <h5>Add new system user</h5>
+            </div>
+            <div class="widget-content nopadding">
+                <div class="form-horizontal">
+                    <div class="control-group">
+                        <label class="control-label">Name :</label>
+                        <div class="controls">
+                            <input type="text" class="span11" placeholder="First Name & Last Name" [(ngModel)]="user.name" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">User Name :</label>
+                        <div class="controls">
+                            <input type="text" class="span11" placeholder="User Name" [(ngModel)]="user.userName" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Password :</label>
+                        <div class="controls">
+                            <input type="text" class="span11" placeholder="Password" [(ngModel)]="user.password" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Email :</label>
+                        <div class="controls">
+                            <input type="text" class="span11" placeholder="Email" [(ngModel)]="user.email" />
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-success" (click)="addNewSystemUser()">  Add System User</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="widget-box">
+    <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+        <h5>Added System Users</h5>
+    </div>
+    <div class="widget-content nopadding">
+        <table class="table table-bordered data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="gradeX" *ngFor="let item; of userList">
+                    <td>{{item.name}}</td>
+                    <td>{{item.userName}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.type==0?'Admin':'No Type'}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

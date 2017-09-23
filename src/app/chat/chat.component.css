@@ -1,0 +1,17 @@
+.userColor {
+    color: green!important;
+    font-weight: bold;
+}
+
+.redColr {
+    color: red!important;
+    font-weight: bold;
+}
+
+.chat-user {
+    float: left;
+    margin-left: 35%;
+    font-size: 16px;
+    margin-top: 14px!important;
+    color: #ff7800;
+}
